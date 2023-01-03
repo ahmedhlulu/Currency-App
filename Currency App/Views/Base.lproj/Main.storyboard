@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--hahahah-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Currency_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SMr-D5-WpJ">
-                                <rect key="frame" x="20" y="160" width="374" height="50"/>
+                                <rect key="frame" x="20" y="108" width="374" height="50"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" placeholder="Enter number" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rVp-tB-Xp1">
-                                        <rect key="frame" x="0.0" y="0.0" width="304" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="LBb-2r-UeX"/>
                                         </constraints>
@@ -28,9 +28,9 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4i5-Ec-kN8">
-                                        <rect key="frame" x="314" y="0.0" width="60" height="50"/>
+                                        <rect key="frame" x="304" y="0.0" width="70" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="R4b-6y-JEt"/>
+                                            <constraint firstAttribute="width" constant="70" id="R4b-6y-JEt"/>
                                             <constraint firstAttribute="height" constant="50" id="fbU-XI-SE9"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
@@ -42,7 +42,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vU0-g3-0zo">
-                                <rect key="frame" x="0.0" y="230" width="414" height="612"/>
+                                <rect key="frame" x="0.0" y="178" width="414" height="664"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" textLabel="vbZ-wt-Lau" style="IBUITableViewCellStyleDefault" id="1dy-TP-wUC">
@@ -64,6 +64,11 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tmP-B3-2Xd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -77,7 +82,7 @@
                             <constraint firstItem="vU0-g3-0zo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zUU-mB-6k6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="hahahah" id="5Kg-XT-fWj"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="5Kg-XT-fWj"/>
                     <connections>
                         <outlet property="numberTextField" destination="rVp-tB-Xp1" id="BOH-KR-0Q1"/>
                         <outlet property="tableView" destination="vU0-g3-0zo" id="5Q9-OM-SXc"/>
@@ -92,8 +97,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="a5I-nH-h8N" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Xdh-Id-Dur">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xdh-Id-Dur">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
